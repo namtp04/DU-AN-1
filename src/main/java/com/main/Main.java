@@ -5,6 +5,7 @@
 package com.main;
 
 import com.component.Menu;
+import com.ui.Chao_JDiaLog;
 import com.ui.PanelBanHang;
 import com.ui.DialogDangNhap;
 import com.ui.PanelQuanLyTaiKhoan;
@@ -52,7 +53,8 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         panelMenu.setMain(this);
-        new DialogDangNhap(this, true).setVisible(true);
+        new Chao_JDiaLog(null, true).setVisible(true);
+        //new DialogDangNhap(this, true).setVisible(true);
         setUser();
         panelTong.setLayout(new FlowLayout());
         panelTong.add(panel);
