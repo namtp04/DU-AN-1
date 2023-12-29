@@ -5,6 +5,7 @@ com\ui\PanelQuanLyThuocTinh$2.class
 com\ui\PanelChiTietKhachHang$2.class
 com\ui\PanelChiTietHoaDon$2.class
 com\ui\PanelQuanLyTaiKhoan.class
+com\ui\Chao_JDiaLog$2.class
 model\LoaiGiay.class
 services\SanPham_Ser.class
 com\dao\SizeDAO.class
@@ -29,6 +30,7 @@ com\ui\PanelBanHang$3.class
 services\BanHang_Ser.class
 com\entity\LoaiGiay.class
 com\ui\PanelChiTietSanPham$2.class
+com\ui\PanelThemNhanVien$4.class
 model\DonHang.class
 services\KhachHangService.class
 com\ui\PanelThemSanPham$4.class
@@ -41,6 +43,7 @@ com\dao\XuatXuDAO.class
 com\ui\PanelQuanLyTaiKhoan$2.class
 com\utils\Auth.class
 com\ui\PanelBanHang$2.class
+com\ui\Chao_JDiaLog$1.class
 com\ui\PanelBanHang.class
 com\entity\ChiTietHoaDon.class
 com\ui\PanelThemNhanVien.class
@@ -68,6 +71,7 @@ com\ui\PanelThemNhanVien$2.class
 com\ui\PanelThemSanPham.class
 com\ui\PanelDoiMatKhau$2.class
 com\ui\PanelQuanLyKhuyenMai$11.class
+com\ui\Chao_JDiaLog.class
 com\ui\PanelChiTietHoaDon.class
 com\ui\PanelHoaDon.class
 com\ui\DialogQuenMatKhau$1.class
@@ -133,6 +137,7 @@ com\ui\DialogDangNhap$4.class
 com\entity\KhuyenMai.class
 com\ui\DialogQuenMatKhau$2.class
 com\ui\PanelQuanLyKhachHang$1.class
+com\ui\Chao_JDiaLog$2$1.class
 com\ui\PanelQuanLyKhuyenMai$13.class
 com\entity\ThuocTinh.class
 com\ui\PanelBanHang$10.class
@@ -213,6 +218,7 @@ com\ui\PanelBanHang$4.class
 com\ui\DialogQuenMatKhau$6.class
 com\ui\PanelQuanLyThuocTinh$1.class
 com\entity\ChiTietSanPham.class
+com\ui\PanelDanhSachSanPham$4.class
 com\ui\PanelHoaDon$5.class
 com\ui\PanelQuanLyKhuyenMai$5.class
 com\ui\PanelThemSanPham$7.class
