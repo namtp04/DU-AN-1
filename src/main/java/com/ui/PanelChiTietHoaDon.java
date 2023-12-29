@@ -332,7 +332,7 @@ public class PanelChiTietHoaDon extends javax.swing.JPanel {
             return;
         }
         try {
-            PdfWriter pdfWriter = new PdfWriter(PanelChiTietHoaDon.class.getResource("/hoaDon/").getPath()+txtMaHD.getText() + ".pdf");
+            PdfWriter pdfWriter = new PdfWriter("src\\main\\java\\HoaDon\\" + txtMaHD.getText() + ".pdf");
             PdfDocument pdfDocument = new PdfDocument(pdfWriter);
             pdfDocument.setDefaultPageSize(PageSize.A4);
             Document dcm = new Document(pdfDocument);
