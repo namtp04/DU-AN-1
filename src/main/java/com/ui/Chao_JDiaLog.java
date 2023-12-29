@@ -4,6 +4,7 @@
  */
 package com.ui;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
@@ -24,18 +25,20 @@ public class Chao_JDiaLog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        Timer timer = new Timer(20, new ActionListener() {
+        this.setTitle("CHÀO MỪNG ĐẾN VỚI THẾ GIỚI GIÀY ĐÁ BÓNG RÔ CON");
+        Timer timer = new Timer(50, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int giatri = jProgressBar1.getValue();
                 if (giatri < 100) {
-
+                    jProgressBar1.setStringPainted(true);
                     jProgressBar1.setValue(giatri + 1);
+                    jProgressBar1.setForeground(Color.DARK_GRAY);
                 } else {
                     if (!hoi) {
-                        hoi = true; 
+                        hoi = true;
                         dispose();
-                        new DialogDangNhap(null,true).setVisible(true);
+                        new DialogDangNhap(null, true).setVisible(true);
                     }
                 }
 
@@ -61,18 +64,18 @@ public class Chao_JDiaLog extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("HỆ THỐNG QUẢN LÝ ĐÀO TẠO EDUSYS");
 
+        jProgressBar1.setBackground(new java.awt.Color(51, 51, 51));
+        jProgressBar1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jProgressBar1.setForeground(new java.awt.Color(255, 255, 255));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
